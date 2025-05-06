@@ -1,44 +1,49 @@
-# ANLP_Project
+# ANLP Project: Arabic Question Answering System
 
-1. Define the Problem:
-   We aim to build an NLP system for Question Answering (QA).
-   The task focuses on developing a model that can understand questions written in natural language and generate accurate and relevant answers from a given text corpus.
+## 1. Problem Definition
 
-This falls under the broader domain of Natural Language Understanding (NLU), requiring the system to comprehend both the semantics of the question and the content of the source text.
+### Objective
+Build an NLP system for **Question Answering (QA)** that:
+- Understands natural language questions in Arabic  
+- Generates accurate, relevant answers from a given text corpus  
+- Demonstrates Natural Language Understanding (NLU) capabilities  
 
-2. Task Description: Question Answering
-   Overview:
-   Question Answering (QA) is a critical task in Natural Language Processing (NLP) that involves automatically providing answers to questions expressed in human language.
-   The main objective is to build a system capable of:
+### Domain
+- **Natural Language Understanding (NLU)**
+- **Information Retrieval**
+- **Semantic Analysis**
 
-Understanding the meaning and context of the question.
+## 2. Task Description: Question Answering
 
-Searching or reasoning over a given text corpus.
+### Overview
+Question Answering (QA) is a core NLP task involving:
+1. Automatic response generation to human-language questions  
+2. Comprehension of question semantics and context  
+3. Information retrieval from text corpora  
 
-Producing an answer that is accurate, relevant, and contextually appropriate.
+### System Requirements
+| Capability | Description |
+|------------|-------------|
+| Understanding | Parse question meaning and intent |
+| Retrieval | Search relevant information from corpus |
+| Generation | Produce contextually appropriate answers |
 
-There are different types of QA tasks, including:
+### QA Task Types
+1. **Extractive QA**  
+   - Extracts answer spans directly from source text  
+   - Example: Highlighting a sentence in Wikipedia  
 
-Extractive QA: The system finds a span of text directly from the corpus.
+2. **Abstractive QA**  
+   - Generates novel answers combining multiple sources  
+   - Example: Summarizing medical research to answer a patient query  
 
-Abstractive QA: The system generates a new answer based on understanding, not necessarily a direct quote.
+3. **Open-domain QA**  
+   - Searches large, unstructured corpora (e.g., entire Wikipedia)  
+   - More challenging than closed-domain QA  
 
-Open-domain QA: The system searches from a very large corpus (e.g., Wikipedia) rather than a fixed small set of documents.
-
-Why is it challenging?
-
-Questions can be asked in many different forms.
-
-Understanding requires capturing deep semantics, not just keywords.
-
-Answers may need to combine information from multiple parts of the text.
-
-Would you like me also to help you continue the next steps like:
-
-Data Collection
-
-Text Preprocessing
-
-Model Selection
-
-Evaluation Metrics
+### Key Challenges
+```diff
++ Linguistic Complexity: Arabic morphology/dialects
++ Semantic Understanding: Beyond keyword matching
++ Multi-document Reasoning: Combining information across sources
+- Ambiguity Resolution: Handling vague/ambiguous questions
